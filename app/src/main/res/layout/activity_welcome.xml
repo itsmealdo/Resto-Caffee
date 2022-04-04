@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Welcome_Activity"
+    android:padding="30dp"
+    android:background="@color/bg">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="115dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/espresso"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_below="@id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/senbold"
+        android:text="@string/hello"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/tvWho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHello"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/senreg"
+        android:text="@string/who_are_you"
+        android:textColor="@color/warna1"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWho"
+        android:hint="Insert your name please"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/black" />
+
+    <android.widget.Button
+        android:id="@+id/btnLanjut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:background="@drawable/item_selector"
+        android:fontFamily="@font/senbold"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Resto Caffe</string>
+    <string name="hello">Hello,</string>
+    <string name="who_are_you">Who are you?</string>
+    <string name="nulll">null</string>
+    <string name="kopi_robusta">Kopi Robusta</string>
+    <string name="kopi_expresso">Kopi Expresso</string>
+    <string name="kopi_luwak">Kopi Luwak</string>
+    <string name="mau_ditambah_campuran_apa">Mau ditambah Campuran apa?</string>
+    <string name="cream">Cream</string>
+    <string name="sugar">Sugar</string>
+    <string name="menu_tambahan">Menu Tambahan?</string>
+    <string name="nasi_goreng">Nasi Goreng</string>
+    <string name="mie_goreng">Mie Goreng</string>
+    <string name="belum_mesan_ente_bang">Belum Mesan ente bang</string>
+</resources>

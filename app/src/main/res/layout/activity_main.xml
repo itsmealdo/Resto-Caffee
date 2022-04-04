@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMainHello"
+        android:layout_below="@id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/senbold"
+        android:text="@string/hello"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/tvMainWho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/senreg"
+        android:text="@string/nulll"
+        android:textColor="@color/warna1"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMauMinum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/senbold"
+            android:text="Mau Minum Apa nih?"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/robusta_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMauMinum"
+            android:paddingLeft="24dp"
+            android:textColor="@color/warna1"
+            android:text="@string/kopi_robusta"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/expresso_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/robusta_radio"
+            android:paddingLeft="24dp"
+            android:textColor="@color/warna1"
+            android:text="@string/kopi_expresso"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/luwak_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expresso_radio"
+            android:paddingLeft="24dp"
+            android:textColor="@color/warna1"
+            android:text="@string/kopi_luwak"
+            android:textSize="16sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/senbold"
+            android:text="@string/mau_ditambah_campuran_apa"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/cream_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOffer"
+            android:paddingLeft="24dp"
+            android:text="@string/cream"
+            android:textColor="@color/warna1"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/sugar_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/cream_checkbox"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/sugar"
+            android:textColor="@color/warna1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOffer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_tambahan"
+            android:textColor="@color/black"
+            android:fontFamily="@font/senbold"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/nasigoreng_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOffer2"
+            android:paddingLeft="24dp"
+            android:textColor="@color/warna1"
+            android:text="@string/nasi_goreng"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/miegoreng_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:textColor="@color/warna1"
+            android:text="@string/mie_goreng"
+            android:textSize="16sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:onClick="submitOrder"
+        android:text="Order"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/senbold"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Order Summary"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/tvOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/belum_mesan_ente_bang"
+        android:fontFamily="@font/senbold"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
